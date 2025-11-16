@@ -5,8 +5,11 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
+h2 {
+    font-size: 30;
+}
 body{
-
+    font-size: 20px;
     background-color: azure;
 }
 header{
