@@ -3,14 +3,24 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+ font-family: 'Poppins.zip', sans-serif;
 }
 body{
-
-    background-color: azure;
-    color: rgb(137, 93, 81)
+    font-size: 20px;
+    padding-bottom:200px;
+    font-family: 'Poppins.zip', sans-serif;
+    text-align: center;
+    background: linear-gradient(
+        rgba(230, 190, 123, 0.6),
+        rgba(237, 180, 88, 0.6),
+        rgba(155, 117, 60, 0.6),
+        rgba(166, 82, 30, 0.6) 
+    );
 }
 header{
+    border-color: #c9a371;
+    border-width: 8px;
+    border-style: solid;
     position: fixed;
     top:0;
     z-index: 9999;
@@ -19,25 +29,30 @@ header{
     align-items: center;
     justify-content: space-between;
     width:100%;
-    background-color: rgb(231, 197, 117);
+    background-color: #3e5737;
     padding:1rem 2rem;
     display: flex;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
+    background: linear-gradient(
+        #3b5435,
+        #3b5435
+    );
 }
 .header-title{
-    font-size: 3rem;
+    font-size: 7.4rem;
     font-weight: 600;
-    color:rgb(165, 100, 40);
-    font-family: 'Poppins', sans-serif;
+    color:#eccc85;
+    margin-top: 60px; 
+    font-family: 'Poppins.zip', sans-serif;
     text-align: center;
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 3rem;
+    font-size: 3.6777rem;
+    font-family: 'Poppins.zip', sans-serif;
     transition:0.2 ease;
     border-bottom: 2px solid transparent;
-    color: black;
+    color: #c6ab6e;
 }
 .header-tabs a.active{
      border-bottom: 2px solid #645017;
@@ -70,6 +85,9 @@ nav a.active {
         width: 1400px; /* Define a specific width for the iframe to allow margin:auto to work */
         height: 730px; /* Define a specific height */
     }
-    p {
-        color: rgb(137, 93, 81); 
-    }
+ p {
+    color: rgb(137, 93, 81);
+    font-size: 36px;
+    font-family: 'Poppins.zip', sans-serif;
+    
+ }
