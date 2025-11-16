@@ -13,6 +13,7 @@ body{
 header{
     position: fixed;
     top:0;
+    z-index: 9999;
     left:0;
     width:100%;
     align-items: center;
@@ -22,17 +23,18 @@ header{
     padding:1rem 2rem;
     display: flex;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    color: rgb(137, 93, 81)
 
 }
 .header-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     color:rgb(165, 100, 40);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 1.1rem;
+    font-size: 3rem;
     transition:0.2 ease;
     border-bottom: 2px solid transparent;
     color: black;
@@ -41,7 +43,9 @@ header{
      border-bottom: 2px solid #645017;
      font-weight: 600;
 }
-
+.home-info{
+    margin-top:120;
+}
 nav a:hover,
 nav a.active {
     color:rgb(239, 173, 60);
@@ -52,7 +56,7 @@ nav a.active {
     gap:2rem;
 }
  nav a {
-    font-size:2rem;
+    font-size:3rem;
  }
  nav a:hover,
  nav a.active{

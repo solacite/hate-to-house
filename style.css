@@ -3,53 +3,69 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+  font-family: 'Poppins.zip', sans-serif;
 }
 h2 {
     font-size: 30;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins.zip', sans-serif;
     text-align: center;
 }
 body{
     font-size: 20px;
-    background-color: azure;
-    font-family: 'Poppins', sans-serif;
+    padding-bottom:200px;
+    font-family: 'Poppins.zip', sans-serif;
     text-align: center;
+    background: linear-gradient(
+        rgba(230, 190, 123, 0.6),
+        rgba(237, 180, 88, 0.6),
+        rgba(155, 117, 60, 0.6),
+        rgba(166, 82, 30, 0.6) 
+    );
 }
 header{
+    border-color: #c9a371;
+    border-width: 8px;
+    border-style: solid;
     position: fixed;
     top:0;
+    z-index: 9999;
     left:0;
     width:100%;
     align-items: center;
     justify-content: space-between;
     width:100%;
-    background-color: rgb(231, 197, 117);
+    background-color: #3e5737;
     padding:1rem 2rem;
     display: flex;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
+    background: linear-gradient(
+        #3b5435,
+        #3b5435
+    );
 }
 .header-title{
-    font-size: 2rem;
+    font-size: 7.4rem;
     font-weight: 600;
-    color:rgb(165, 100, 40);
-    font-family: 'Poppins', sans-serif;
+    color:#eccc85;
+    margin-top: 60px; 
+    font-family: 'Poppins.zip', sans-serif;
     text-align: center;
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 1.1rem;
+    font-size: 3.6777rem;
+    font-family: 'Poppins.zip', sans-serif;
     transition:0.2 ease;
     border-bottom: 2px solid transparent;
-    color: black;
+    color: #c6ab6e;
 }
 .header-tabs a.active{
      border-bottom: 2px solid #645017;
      font-weight: 600;
 }
-
+.home-info{
+    margin-top:120;
+}
 nav a:hover,
 nav a.active {
     color:rgb(239, 173, 60);
@@ -60,7 +76,7 @@ nav a.active {
     gap:2rem;
 }
  nav a {
-    font-size:2rem;
+    font-size:3rem;
  }
  nav a:hover,
  nav a.active{
@@ -70,33 +86,60 @@ nav a.active {
  }
  p {
     color: rgb(137, 93, 81);
+    font-size: 36px;
+    font-family: 'Poppins.zip', sans-serif;
     
  }
  h2 {
     color: rgb(99, 62, 51);
-    
+    font-size: 42px;
+    font-family: 'Poppins.zip', sans-serif;
  }
 .container {
+    min-height: 150px;
+    min-width: 159px;
     display: flex;
+    flex-direction: column;
+    gap:2rem;
     align-items: center;
     grid-template-areas:
         "header header"
         "content sidebar"
         "footer footer";
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 80%;
-    max-width: 600px;
+    gap: 20px;
+    width: 50%;
+    margin-left:5%;
+    max-width: 900px;
+    font-weight: bold;
+    font-family: 'Poppins.zip', sans-serif;
 }
 
 .container div {
-    grid-area: unset;
+    min-height: 150px;
+    min-width: 200px;
+    border-color: #3b5435;
+    border-width: 12px;
+    border-style: solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(206, 140, 90);
+    font-weight: bold;
+    background: linear-gradient(
+        rgba(206, 140, 90, 0.6),
+        rgba(165, 100, 60, 0.6)
+    );
+.container div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}   
     color: white;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    padding: 20px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(4px); 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    align-items: center;
+    font-family: 'Poppins.zip', sans-serif;
 }
