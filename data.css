@@ -56,6 +56,7 @@ nav a.active {
     border-radius: 0.5 rem;
     border-bottom: 0.5 rem solid white;
  }
+
 .container {
     display: flex;
     align-items: center;

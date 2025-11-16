@@ -33,7 +33,7 @@ header{
 
 }
 .header-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     color:rgb(165, 100, 40);
     font-family: 'Poppins', sans-serif;
@@ -41,7 +41,7 @@ header{
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 1.1rem;
+    font-size: 3rem;
     transition:0.2 ease;
     border-bottom: 2px solid transparent;
     color: black;
@@ -63,7 +63,7 @@ nav a.active {
     gap:2rem;
 }
  nav a {
-    font-size:2rem;
+    font-size:3rem;
  }
  nav a:hover,
  nav a.active{
