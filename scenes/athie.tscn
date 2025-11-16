@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://eto2nqm5u575"]
+
+[ext_resource type="Texture2D" uid="uid://boc8n4dwo5vdk" path="res://assets/athie/walk/Idle-1.png" id="1_cbpon"]
+[ext_resource type="Texture2D" uid="uid://c6opdc4lkwsrv" path="res://assets/athie/walk/Idle-2.png" id="2_brw40"]
+[ext_resource type="Texture2D" uid="uid://bhqsv0js3edkx" path="res://assets/athie/walk/Idle-3.png" id="3_j3rqw"]
+[ext_resource type="Texture2D" uid="uid://ev5h4hulh83m" path="res://assets/athie/walk/Idle-4.png" id="4_gtgss"]
+[ext_resource type="Texture2D" uid="uid://off66hki4b8g" path="res://assets/athie/walk/Idle-5.png" id="5_3mav8"]
+[ext_resource type="Texture2D" uid="uid://crmieus1c7nr2" path="res://assets/athie/walk/Idle-6.png" id="6_tgufx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mgm6v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iy25b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_j3rqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tgufx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cbpon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_brw40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j3rqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gtgss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3mav8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tgufx")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Athie" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Athie"]
+shape = SubResource("CapsuleShape2D_mgm6v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Athie"]
+sprite_frames = SubResource("SpriteFrames_iy25b")
+animation = &"walk"
+autoplay = "idle"
+frame_progress = 0.373778
