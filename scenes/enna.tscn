@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://c4jpf2idhuwxn"]
+
+[ext_resource type="Texture2D" uid="uid://co0l7pr22x4s7" path="res://assets/athie/walk/Idle-3.png" id="1_03506"]
+[ext_resource type="Script" uid="uid://by8qnmeg4uueg" path="res://scripts/enna.gd" id="1_nw7bj"]
+[ext_resource type="Texture2D" uid="uid://dg0i1sge6w6qs" path="res://assets/athie/walk/Idle-6.png" id="2_nw7bj"]
+[ext_resource type="Texture2D" uid="uid://ncxqi84axu0o" path="res://assets/athie/punch/Punch-1.png" id="3_hiqhi"]
+[ext_resource type="Texture2D" uid="uid://crwgrei4x23gf" path="res://assets/athie/punch/Punch-2.png" id="4_o2in0"]
+[ext_resource type="Texture2D" uid="uid://cc71jpxmxtqyb" path="res://assets/athie/punch/Punch-3.png" id="5_pa0nb"]
+[ext_resource type="Texture2D" uid="uid://bk4faf6jfr364" path="res://assets/athie/walk/Idle-1.png" id="6_spf2g"]
+[ext_resource type="Texture2D" uid="uid://qugv4rrlnvlt" path="res://assets/athie/walk/Idle-2.png" id="7_aci1k"]
+[ext_resource type="Texture2D" uid="uid://bec0va3dlofl8" path="res://assets/athie/walk/Idle-4.png" id="8_d13of"]
+[ext_resource type="Texture2D" uid="uid://c83wb2qvnx6de" path="res://assets/athie/walk/Idle-5.png" id="9_18eol"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfb5b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_03506")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nw7bj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hiqhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o2in0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pa0nb")
+}],
+"loop": false,
+"name": &"punch",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_spf2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aci1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_03506")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_d13of")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_18eol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nw7bj")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_orq1i"]
+radius = 254.0
+height = 1226.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Enna" type="CharacterBody2D" parent="."]
+script = ExtResource("1_nw7bj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enna"]
+modulate = Color(0.972956, 0, 0.10377, 1)
+position = Vector2(9, 0)
+sprite_frames = SubResource("SpriteFrames_vfb5b")
+animation = &"punch"
+autoplay = "idle"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enna"]
+position = Vector2(3, 279)
+shape = SubResource("CapsuleShape2D_orq1i")

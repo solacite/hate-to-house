@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bphulcdxc6k8c"]
+[gd_scene load_steps=6 format=3 uid="uid://bphulcdxc6k8c"]
 
 [ext_resource type="Texture2D" uid="uid://bimiq5sl754pw" path="res://assets/bg.png" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://eto2nqm5u575" path="res://scenes/athie.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://c4jpf2idhuwxn" path="res://scenes/enna.tscn" id="3_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://bll0ppniu7gtu" path="res://assets/rooftop.png" id="3_sugp2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sugp2"]
-size = Vector2(917.5, 278)
+size = Vector2(632, 166)
 
 [node name="Main" type="Node2D"]
 
@@ -15,7 +16,11 @@ scale = Vector2(0.465, 0.465)
 texture = ExtResource("1_0wfyh")
 
 [node name="Athie" parent="." instance=ExtResource("1_o5qli")]
-position = Vector2(185, 328)
+position = Vector2(315, 357)
+scale = Vector2(0.16, 0.16)
+
+[node name="Node2D" parent="." instance=ExtResource("3_jyhfs")]
+position = Vector2(855, 362)
 scale = Vector2(0.16, 0.16)
 
 [node name="Eitha" parent="." instance=ExtResource("1_o5qli")]
@@ -29,10 +34,11 @@ scale = Vector2(0.425, 0.425)
 [node name="Sprite2D" type="Sprite2D" parent="Rooftop"]
 position = Vector2(4.70588, -9.41162)
 rotation = -0.00776682
+scale = Vector2(0.69, 0.69)
 texture = ExtResource("3_sugp2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rooftop"]
-position = Vector2(-11.1763, 82.353)
+position = Vector2(-2.35291, 18.8235)
 scale = Vector2(2.35294, 2.35294)
 shape = SubResource("RectangleShape2D_sugp2")
 
