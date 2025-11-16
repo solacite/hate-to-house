@@ -72,13 +72,12 @@ height = 1226.0
 script = ExtResource("1_brw40")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Athie"]
-position = Vector2(11, 0)
+position = Vector2(9, 0)
 sprite_frames = SubResource("SpriteFrames_iy25b")
-animation = &"punch"
+animation = &"walk"
 autoplay = "idle"
-frame = 2
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Athie"]
+visible = false
 position = Vector2(3, 279)
 shape = SubResource("CapsuleShape2D_mgm6v")
