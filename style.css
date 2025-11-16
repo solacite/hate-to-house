@@ -90,24 +90,17 @@ nav a.active {
     font-family: 'Poppins.zip', sans-serif;
  }
 .container {
-    min-height: 150px;
-    min-width: 159px;
     display: flex;
-    flex-direction: column;
-    gap:2rem;
-    align-items: center;
-    grid-template-areas:
-        "header header"
-        "content sidebar"
-        "footer footer";
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 50%;
-    margin-left:5%;
-    max-width: 900px;
-    font-weight: bold;
-    font-family: 'Poppins.zip', sans-serif;
+    flex-direction: row;      
+    flex-wrap: wrap;          
+    gap: 2rem;
+    justify-content: center;   
+    align-items: flex-start;  
+    width: 90%;                
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
 
 .container div {
     min-height: 150px;
