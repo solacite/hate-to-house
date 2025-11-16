@@ -13,11 +13,19 @@ h2 {
 body{
     font-size: 20px;
     padding-bottom:200px;
-    background-color: azure;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    background: linear-gradient(
+        rgba(230, 190, 123, 0.6),
+        rgba(237, 180, 88, 0.6),
+        rgba(155, 117, 60, 0.6),
+        rgba(166, 82, 30, 0.6) 
+    );
 }
 header{
+    border-color: #608a55;
+    border-width: 8px;
+    border-style: solid;
     position: fixed;
     top:0;
     z-index: 9999;
@@ -26,22 +34,25 @@ header{
     align-items: center;
     justify-content: space-between;
     width:100%;
-    background-color: rgb(231, 197, 117);
+    background-color: #3b5435;
     padding:1rem 2rem;
     display: flex;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
+    background: linear-gradient(
+        rgba(206, 140, 90, 0.6),
+        rgba(165, 100, 60, 0.6)
+    );
 }
 .header-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
-    color:rgb(165, 100, 40);
+    color:#eccc85;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 1.1rem;
+    font-size: 3rem;
     transition:0.2 ease;
     border-bottom: 2px solid transparent;
     color: black;
@@ -63,7 +74,7 @@ nav a.active {
     gap:2rem;
 }
  nav a {
-    font-size:2rem;
+    font-size:3rem;
  }
  nav a:hover,
  nav a.active{
@@ -73,13 +84,16 @@ nav a.active {
  }
  p {
     color: rgb(137, 93, 81);
+    font-size: 28px;
     
  }
  h2 {
     color: rgb(99, 62, 51);
-    
+    font-size: 36px;
  }
 .container {
+    min-height: 150px;
+    min-width: 159px;
     display: flex;
     flex-direction: column;
     gap:2rem;
@@ -93,14 +107,20 @@ nav a.active {
     width: 50%;
     margin-left:5%;
     max-width: 900px;
+    font-weight: bold;
 }
 
 .container div {
+    min-height: 150px;
+    min-width: 159px;
+    border-color: #3b5435;
+    border-width: 12px;
+    border-style: solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    font-weight: bold;
     background: linear-gradient(
         rgba(206, 140, 90, 0.6),
         rgba(165, 100, 60, 0.6)
@@ -108,12 +128,13 @@ nav a.active {
 .container div:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
+}   
     color: white;
     font-size: 1.3rem;
     border-radius: 15px;
     padding: 30px;
     backdrop-filter: blur(4px); 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    align-items: center
 }
 

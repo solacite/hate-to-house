@@ -62,7 +62,6 @@ nav a.active {
     border-bottom: 0.5 rem solid white;
  }
 
-
 .container {
     display: flex;
     flex-direction: column;
