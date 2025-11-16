@@ -14,6 +14,22 @@ func _physics_process(delta: float) -> void:
 	# jump
 	if Input.is_action_just_pressed("a_up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+	# hit
+	if Input.is_action_just_pressed("a_hit") and is_on_floor():
+		print("hit success")
+		sprite.play("punch")
+		await sprite.animation_finished
+		
+		var direction := Input.get_axis("a_left", "a_right")
+		if direction:
+			if sprite.animation != "walk":
+				sprite.play("walk")
+			velocity.x = direction * SPEED
+		else:
+			if sprite.animation != "idle":
+				sprite.play("idle")
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	var direction := Input.get_axis("a_left", "a_right")
 	if direction:

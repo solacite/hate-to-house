@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bll0ppniu7gtu"
-path="res://.godot/imported/rooftop.png-bc4c1435546546804fd4e3d48abd2853.ctex"
+uid="uid://crwgrei4x23gf"
+path="res://.godot/imported/Punch-2.png-f0f21e83a049dc94facff19200db56d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/rooftop.png"
-dest_files=["res://.godot/imported/rooftop.png-bc4c1435546546804fd4e3d48abd2853.ctex"]
+source_file="res://assets/athie/punch/Punch-2.png"
+dest_files=["res://.godot/imported/Punch-2.png-f0f21e83a049dc94facff19200db56d2.ctex"]
 
 [params]
 
