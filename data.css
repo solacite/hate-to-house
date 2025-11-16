@@ -16,6 +16,7 @@ header{
     background-color: rgb(231, 197, 117);
     padding:1rem 2rem;
     display: flex;
+    z-index: 10;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
 }
@@ -50,33 +51,79 @@ nav a.active {
  nav a {
     font-size:2rem;
  }
+ body{
+    padding-top:100px;
+    min-height:120vh;
+ }
  nav a:hover,
  nav a.active{
     padding:1rem;
     border-radius: 0.5 rem;
     border-bottom: 0.5 rem solid white;
  }
+
+
 .container {
     display: flex;
+    flex-direction: column;
+    gap:50px;
     align-items: center;
     grid-template-areas:
         "header header"
         "content sidebar"
         "footer footer";
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 80%;
-    max-width: 600px;
+    gap: 20px;
+    width: 90%;
+    margin-left:5%;
+    max-width: 900px;
 }
 
 .container div {
-    grid-area: unset;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(206, 140, 90);
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    padding: 20px;
+
+    background: linear-gradient(
+        rgba(206, 140, 90, 0.6),
+        rgba(165, 100, 60, 0.6)
+    );
+    border-radius: 15px;
+    padding:30px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.container div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.box{
+    opacity: 0;
+    transform: translateY(50px);
+    transition:opacity 1s ease-out, transform 1s ease-out;
+    max-width: 600px;
+    width:90%;
+    align-items:flex-start;
+    border-radius:15px;
+    padding:30px;
+    width:50%;
+    margin:40px auto;
+
+}
+.box.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.container .box:nth-child(even){
+    align-self: flex-end;
+
+
+}
+.container .box:nthn-child(odd){
+    align-self:flex-start;
+}
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
