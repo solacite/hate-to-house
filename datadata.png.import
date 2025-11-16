@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhqsv0js3edkx"
-path="res://.godot/imported/Idle-3.png-093c311e167522351c9e53e84121c799.ctex"
+uid="uid://c8wmayjyku1ok"
+path="res://.godot/imported/datadata.png-0770004cf21705c19813153f57e891ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/athie/walk/Idle-3.png"
-dest_files=["res://.godot/imported/Idle-3.png-093c311e167522351c9e53e84121c799.ctex"]
+source_file="res://datadata.png"
+dest_files=["res://.godot/imported/datadata.png-0770004cf21705c19813153f57e891ed.ctex"]
 
 [params]
 
