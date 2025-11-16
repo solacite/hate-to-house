@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="hate to house"
+run/main_scene="uid://bphulcdxc6k8c"
 config/features=PackedStringArray("4.4", "GL Compatibility")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [rendering]
 
