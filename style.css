@@ -77,7 +77,8 @@ nav a.active {
     
  }
 .container {
-    display: grid;
+    display: flex;
+    align-items: center;
     grid-template-areas:
         "header header"
         "content sidebar"
@@ -93,7 +94,7 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: tomato;
+    background-color: rgb(206, 140, 90);
     color: white;
     font-size: 1.5rem;
     border-radius: 8px;
