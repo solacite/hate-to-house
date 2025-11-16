@@ -18,6 +18,10 @@ texture = ExtResource("1_0wfyh")
 position = Vector2(185, 328)
 scale = Vector2(0.16, 0.16)
 
+[node name="Eitha" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(806, 321)
+scale = Vector2(0.16, 0.16)
+
 [node name="Rooftop" type="StaticBody2D" parent="."]
 position = Vector2(584, 579)
 scale = Vector2(0.425, 0.425)
@@ -28,6 +32,16 @@ rotation = -0.00776682
 texture = ExtResource("3_sugp2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rooftop"]
+position = Vector2(-11.1763, 82.353)
+scale = Vector2(2.35294, 2.35294)
+shape = SubResource("RectangleShape2D_sugp2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Rooftop"]
+position = Vector2(4.70588, -9.41162)
+rotation = -0.00776682
+texture = ExtResource("3_sugp2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Rooftop"]
 position = Vector2(-11.1763, 82.353)
 scale = Vector2(2.35294, 2.35294)
 shape = SubResource("RectangleShape2D_sugp2")
