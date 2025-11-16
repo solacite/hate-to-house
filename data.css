@@ -44,16 +44,17 @@ header{
     );
 }
 .header-title{
-    font-size: 7.4rem;
+    font-size: 3rem;
     font-weight: 600;
     color:#eccc85;
-    margin-top: 60px; 
+    margin-top: 0; 
     font-family: 'Poppins.zip', sans-serif;
     text-align: center;
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 3.6777rem;
+    padding:0.5rem 1rem;
+    font-size: 1.8rem;
     font-family: 'Poppins.zip', sans-serif;
     transition:0.2 ease;
     border-bottom: 2px solid transparent;
@@ -73,17 +74,17 @@ nav a.active {
 }
 .header-tabs{
     display:flex;
-    gap:2rem;
+    gap:1.5rem;
 }
  nav a {
     font-size:3rem;
  }
  nav a:hover,
- nav a.active{
-    padding:1rem;
-    border-radius: 0.5 rem;
-    border-bottom: 0.5 rem solid white;
- }
+nav a.active {
+    color: rgb(239, 173, 60);
+    border-bottom: 2px solid rgb(239, 173, 60);
+    padding: 0.5rem 1rem;
+}
  p {
     color: rgb(137, 93, 81);
     font-size: 36px;

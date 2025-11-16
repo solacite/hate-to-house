@@ -5,6 +5,9 @@
   text-decoration: none;
  font-family: 'Poppins.zip', sans-serif;
 }
+.title{
+    margin-top: 80px;
+}
 body{
     font-size: 20px;
     padding-bottom:200px;
@@ -39,18 +42,19 @@ header{
     );
 }
 .header-title{
-    font-size: 7.4rem;
+    font-size: 3rem;
     font-weight: 600;
     color:#eccc85;
-    margin-top: 60px; 
+    margin-top: 0; 
     font-family: 'Poppins.zip', sans-serif;
     text-align: center;
 }
 .header-tabs a{
     padding-bottom:6px;
-    font-size: 3.6777rem;
+    font-size: 1.8rem;
     font-family: 'Poppins.zip', sans-serif;
     transition:0.2 ease;
+    padding:0.5rem 1rem;
     border-bottom: 2px solid transparent;
     color: #c6ab6e;
 }
@@ -68,7 +72,7 @@ nav a.active {
 }
 .header-tabs{
     display:flex;
-    gap:2rem;
+    gap:1.5rem;
 }
  nav a {
     font-size:3rem;
@@ -76,14 +80,13 @@ nav a.active {
  nav a:hover,
  nav a.active{
     padding:1rem;
-    border-radius: 0.5 rem;
     border-bottom: 0.5 rem solid white;
  }
      iframe {
-        display: block; /* Treat the iframe as a block-level element */
-        margin: 0 auto; /* Set top/bottom margin to 0 and left/right margin to auto for centering */
-        width: 1400px; /* Define a specific width for the iframe to allow margin:auto to work */
-        height: 730px; /* Define a specific height */
+        display: block; 
+        margin: 0 auto; 
+        width: 1400px; 
+        height: 730px; 
     }
  p {
     color: rgb(137, 93, 81);
