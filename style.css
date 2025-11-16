@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
 }
 h2 {
     font-size: 30;
@@ -13,6 +12,7 @@ h2 {
 }
 body{
     font-size: 20px;
+    padding-bottom:200px;
     background-color: azure;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -20,6 +20,7 @@ body{
 header{
     position: fixed;
     top:0;
+    z-index: 9999;
     left:0;
     width:100%;
     align-items: center;
@@ -49,7 +50,9 @@ header{
      border-bottom: 2px solid #645017;
      font-weight: 600;
 }
-
+.home-info{
+    margin-top:120;
+}
 nav a:hover,
 nav a.active {
     color:rgb(239, 173, 60);
@@ -78,25 +81,39 @@ nav a.active {
  }
 .container {
     display: flex;
+    flex-direction: column;
+    gap:2rem;
     align-items: center;
     grid-template-areas:
         "header header"
         "content sidebar"
         "footer footer";
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 80%;
-    max-width: 600px;
+    gap: 20px;
+    width: 50%;
+    margin-left:5%;
+    max-width: 900px;
 }
 
 .container div {
-    grid-area: unset;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(206, 140, 90);
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    padding: 20px;
+
+    background: linear-gradient(
+        rgba(206, 140, 90, 0.6),
+        rgba(165, 100, 60, 0.6)
+    );
+.container div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(4px); 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
