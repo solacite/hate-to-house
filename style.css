@@ -68,3 +68,11 @@ nav a.active {
     border-radius: 0.5 rem;
     border-bottom: 0.5 rem solid white;
  }
+ p {
+    color: rgb(137, 93, 81);
+    
+ }
+ h2 {
+    color: rgb(99, 62, 51);
+    
+ }

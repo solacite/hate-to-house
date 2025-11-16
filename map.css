@@ -8,6 +8,7 @@
 body{
 
     background-color: azure;
+    color: rgb(137, 93, 81)
 }
 header{
     position: fixed;
@@ -21,7 +22,7 @@ header{
     padding:1rem 2rem;
     display: flex;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
+    color: rgb(137, 93, 81)
 
 }
 .header-title{
@@ -64,4 +65,7 @@ nav a.active {
         margin: 0 auto; /* Set top/bottom margin to 0 and left/right margin to auto for centering */
         width: 1400px; /* Define a specific width for the iframe to allow margin:auto to work */
         height: 730px; /* Define a specific height */
+    }
+    p {
+        color: rgb(137, 93, 81); 
     }
